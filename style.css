@@ -1,0 +1,20 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 0.2rem solid black;   
+}
+
+header h1{
+    font: 1.9rem black;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+}
