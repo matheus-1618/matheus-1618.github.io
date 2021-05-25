@@ -18,3 +18,47 @@ header h1{
     align-items: center;
     max-width: 100%;
 }
+
+
+header img{
+    position:absolute;
+    height: 3.5rem;
+    width: 3.5rem;
+    left: 0.3rem;
+}
+
+
+.imagem{
+    height: 5rem;
+    width: 5rem;
+
+}
+
+
+/*classes chat*/
+
+.conversa1 {
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    align-items:center;
+    flex-wrap:wrap;
+    max-height:80%;
+    width: 100%;
+    margin: 0.5rem 0rem;
+    padding: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 0.7rem;
+}
+
+/*Espaço entre nome e alerta*/
+.espaco{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
