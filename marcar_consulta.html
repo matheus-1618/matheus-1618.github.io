@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consulta</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="img/voltar.png" alt="botao_voltar">
+        <h1>Marcar Consulta</h1>
+    </header>
+
+    <div class='marcar'>
+
+        <ul>
+            <li class="paciente">
+                Paciente
+            </li>
+
+            <li>
+                <!-- Pegar o digitado para substituir o nome em agenda -->
+                <input type="text" required>
+            </li>
+
+        </ul>
+
+        <ul class = "frequencia" >
+
+            <h2>Frequência</h2>
+
+            <form action="agenda.html">
+                <input type="checkbox" id="Semanal">
+                <label for="Semanal"> Semanal</label><br>
+                <input type="checkbox" id="Mensal">
+                <label for="Mensal"> Mensal</label><br>
+                <input type="checkbox" id="Hoje">
+                <label for="Hoje"> Apenas Hoje</label><br><br>
+                <input type="submit" value="Confirmar">
+              </form>
+
+        </ul>
+
+        <footer>
+            <img src="img/logo.png" alt="logo">
+            AppPsi
+        </footer>
+
+    </div>
+</body>
+</html>
