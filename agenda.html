@@ -14,67 +14,72 @@
 <body>
 
     <header>
-        <img src="img/voltar.png" alt="botao_voltar">
+
+        <a href="index.html"><img src="img/voltar.png" alt="menu"></a>
         <h1>Agenda</h1>
+
     </header>
 
-    <div class = 'data'>
-        
-        <a href="index.html"><img src="img/passar.png" alt="passar"></a>
-        
-        <h2>Hoje</h2>
+    <main class = 'content-box'>
 
-        <a href="index.html"><img src="img/passar.png" alt="passar"></a>
+        <div class = 'data'>
+            
+            <img src="img/passar_voltar.png" alt="passar">
+            <h2>Hoje</h2>
+            <img src="img/passar.png" alt="passar">
 
-    </div>
+        </div>
 
-    <div class ='agenda'>
-        <ul>
-            <li>Horário</li>
-            <li>Paciente</li>
-        </ul>
+        <div class ='agenda'>
 
-        <ul>
-            <li>9hrs/10hrs</li>
-            <li>
-                <!-- Javascript? -->
-                <a href="add_consulta"><img src="img/mais.png" alt="adicionar">Caio</a>
-            </li>
-        </ul>
+            <ul class = 'linha_agenda'>
+                <li class="hora">Horário</li>
+                <li>Paciente</li>
+            </ul>
 
-        <ul>
-            <li>10hrs/11hrs</li>
-            <li>
-                <!-- Javascript? -->
-                <a href="add_consulta"><img src="img/mais.png" alt="adicionar"></a>
-            </li>
-        </ul>
+            <ul class = 'linha_agenda'>
+                <li class="hora">9hrs/10hrs</li>
+                <li>
+                    Caio
+                </li>
+            </ul>
 
-        <ul>
-            <li>11hrs/12hrs</li>
-            <li>
-                <!-- Javascript? -->
-                <a href="add_consulta"><img src="img/mais.png" alt="adicionar">Maria</a>
-            </li>
-        </ul>
+            <ul class = 'linha_agenda'>
+                <li class="hora">10hrs/11hrs</li>
+                <li>
+                    <!--Javascript-->
+                    <div class ='pop_add'></div>
+                    <a href="marcar_consulta.html"><img class = 'add_consulta' src="img/adicionar.png" alt="adicionar"></a>
+                </li>
+            </ul>
 
-        <ul>
-            <li>13hrs/14hrs</li>
-            <li>
-                <!-- Javascript? -->
-                <a href="add_consulta"><img src="img/mais.png" alt="adicionar"> André</a>
-            </li>
-        </ul>
+            <ul class = 'linha_agenda'>
+                <li class="hora">11hrs/12hrs</li>
+                <li>
+                    Maria
+                </li>
+            </ul>
 
-        <ul>
-            <li>14hrs/15hrs</li>
-            <li>
-                <!-- Javascript? -->
-                <a href="add_consulta"><img src="img/mais.png" alt="adicionar">Julia</a>
-            </li>
-        </ul>
+            <ul class = 'linha_agenda'>
+                <li class="hora">13hrs/14hrs</li>
+                <li>
+                    <!-- Javascript? -->
+                    <div class ='pop_delete'></div>
+                    André
 
-    </div>
+                </li>
+            </ul>
+
+            <ul class = 'linha_agenda_ultima'>
+                <li class="hora">14hrs/15hrs</li>
+                <li>
+                    Julia
+                </li>
+            </ul>
+
+        </div>
+
+    </main>
 
     <footer>
         <img src="img/logo.png" alt="logo">

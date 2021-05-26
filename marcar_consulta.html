@@ -11,15 +11,18 @@
 
 </head>
 <body>
+
     <header>
         <img src="img/voltar.png" alt="botao_voltar">
         <h1>Marcar Consulta</h1>
     </header>
 
-    <div class='marcar'>
 
-        <ul>
-            <li class="paciente">
+    <main class='content-box'>
+
+        <ul class="add_nome_paciente">
+
+            <li class = 'nome_paciente'>
                 Paciente
             </li>
 
@@ -30,11 +33,11 @@
 
         </ul>
 
-        <ul class = "frequencia" >
+        <div class = "frequencia" >
 
             <h2>Frequência</h2>
 
-            <form action="agenda.html">
+            <form class="formulario" action="agenda.html">
                 <input type="checkbox" id="Semanal">
                 <label for="Semanal"> Semanal</label><br>
                 <input type="checkbox" id="Mensal">
@@ -42,15 +45,16 @@
                 <input type="checkbox" id="Hoje">
                 <label for="Hoje"> Apenas Hoje</label><br><br>
                 <input type="submit" value="Confirmar">
-              </form>
+            </form>
 
-        </ul>
+        <div>
 
-        <footer>
-            <img src="img/logo.png" alt="logo">
-            AppPsi
-        </footer>
+    </main>
 
-    </div>
+    <footer>
+        <img src="img/logo.png" alt="logo">
+        AppPsi
+    </footer>
+
 </body>
 </html>
