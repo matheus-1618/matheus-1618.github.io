@@ -16,7 +16,8 @@ header{
     height: 5rem;
     width: 100%;
 
-    border-bottom: 0.1rem solid black;  
+    border-bottom: 0.1rem solid black; 
+    background-color: #7760FF; 
 }
 
 header img{
@@ -52,6 +53,7 @@ header h1{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+    padding:0.8rem;
        
  }
 
@@ -317,10 +319,10 @@ img.add_consulta {
 /*TELA MARCAR CONSULTA*/
 
 .add_nome_paciente {
-
+    
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0.5;
 
     justify-content: center;
     align-items: flex-start;
@@ -328,41 +330,49 @@ img.add_consulta {
     width: 100%;
 }
 
-.add_nome_paciente li {
+.add_nome_paciente h2 {
     
     width: 100%;
-    height: 15%;
-
+    height: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     font-size: 1.2rem;
+    border-bottom: 0.1rem solid black;
+
 
 }
 
 li.nome_paciente{
 
     border-bottom: 0.1rem solid black;
-    margin-bottom: 1.2rem;
+    
 }
 
-
+.botao_texto{
+    width: 15rem;
+    height:1.5rem;
+    min-width: 0.5rem;
+    margin-top:0.9rem
+}
 .frequencia {
 
     width: 100%;
     
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow: 3;
 }
+
+
 
 .frequencia h2 {
 
     margin-bottom: 1.5rem;
 
     width: 100%;
-    height: 15%;
+    height: 10%;
 
     display: flex;
     justify-content: space-between;
@@ -371,16 +381,39 @@ li.nome_paciente{
     font-size: 1.2rem;
 
     border-bottom: 0.1rem solid black;
+    border-top: 0.1rem solid black;
 }
 
 .formulario {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    height:40%;
+    justify-content: space-evenly;
+    align-items: center;
+    
 
-    flex: 2;
+   
+} 
+.formulario div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left:1rem;
 }
 
+.botao{
+    width: 30%;
+    min-width: 10%;
+    
+    
+}
 
+.formulario input{
+    display:flex;
+    justify-content: center;
+}
 /*Presente em todas as telas FOOTER*/
 
 footer {

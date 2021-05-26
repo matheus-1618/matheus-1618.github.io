@@ -20,34 +20,41 @@
 
     <main class='content-box'>
 
-        <ul class="add_nome_paciente">
+        <div class="add_nome_paciente">
 
-            <li class = 'nome_paciente'>
+            <h2>
                 Paciente
-            </li>
+            </h2>
 
-            <li>
+            
                 <!-- Pegar o digitado para substituir o nome em agenda -->
-                <input type="text" required>
-            </li>
+            <input class="botao_texto" type="text" required>
+            
 
-        </ul>
+        </div>
 
         <div class = "frequencia" >
 
             <h2>Frequência</h2>
 
             <form class="formulario" action="agenda.html">
+                <div>
                 <input type="checkbox" id="Semanal">
-                <label for="Semanal"> Semanal</label><br>
+                <label for="Semanal"> Semanal</label>
+                </div>
+                <div>
                 <input type="checkbox" id="Mensal">
-                <label for="Mensal"> Mensal</label><br>
+                <label for="Mensal"> Mensal</label>
+                </div>
+                <div>
                 <input type="checkbox" id="Hoje">
-                <label for="Hoje"> Apenas Hoje</label><br><br>
-                <input type="submit" value="Confirmar">
+                <label for="Hoje"> Apenas Hoje</label>
+                </div>
+                <input class="botao" type="submit" value="Confirmar">
+                
             </form>
 
-        <div>
+        </div>
 
     </main>
 
