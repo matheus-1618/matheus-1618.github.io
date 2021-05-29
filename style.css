@@ -16,7 +16,8 @@ header{
     height: 5rem;
     width: 100%;
 
-    border-bottom: 0.1rem solid black;  
+    border-bottom: 0.1rem solid black; 
+    background-color: #7760FF; 
 }
 
 header img{
@@ -336,10 +337,10 @@ img.add_consulta {
 /*TELA MARCAR CONSULTA*/
 
 .add_nome_paciente {
-
+    
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0.5;
 
     justify-content: center;
     align-items: flex-start;
@@ -347,16 +348,17 @@ img.add_consulta {
     width: 100%;
 }
 
-.add_nome_paciente li {
+.add_nome_paciente h2 {
     
     width: 100%;
-    height: 15%;
-
+    height: 45%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     
     font-size: 1.2rem;
+    border-bottom: 0.1rem solid black;
+
 
 }
 
@@ -382,6 +384,8 @@ li .Nome{
     flex-grow: 3;
 }
 
+
+
 .frequencia h2 {
 
     /*margin-bottom: 1.5rem;*/
@@ -396,17 +400,29 @@ li .Nome{
     font-size: 1.2rem;
 
     border-bottom: 0.1rem solid black;
+    border-top: 0.1rem solid black;
 }
 
 .formulario {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    height:40%;
+    justify-content: space-evenly;
+    align-items: center;
+    
 
     margin-top: 1.5rem;
 
     flex: 2;
 }
 
+.botao{
+    width: 30%;
+    min-width: 10%;
+    
+    
+}
 
 .frequencia .periodo{
     width: 100%;
