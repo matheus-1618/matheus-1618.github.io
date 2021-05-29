@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <img src="img/voltar.png" alt="botao_voltar">
+        <a href="index.html"><img src="img/voltar.png" alt="botao_voltar"></a>
         <h1>Marcar Consulta</h1>
     </header>
 
@@ -28,7 +28,7 @@
 
             <li>
                 <!-- Pegar o digitado para substituir o nome em agenda -->
-                <input type="text" required>
+                <input class = 'Nome' type="text" placeholder="Digite Nome ..." required>
             </li>
 
         </ul>
@@ -38,13 +38,26 @@
             <h2>Frequência</h2>
 
             <form class="formulario" action="agenda.html">
-                <input type="checkbox" id="Semanal">
-                <label for="Semanal"> Semanal</label><br>
-                <input type="checkbox" id="Mensal">
-                <label for="Mensal"> Mensal</label><br>
-                <input type="checkbox" id="Hoje">
-                <label for="Hoje"> Apenas Hoje</label><br><br>
-                <input type="submit" value="Confirmar">
+
+                <div class="periodo">
+                    <input type="checkbox" id="Semanal">
+                    <label for="Semanal"> Semanal</label><br>
+                </div>
+                
+                <div class="periodo">
+                    <input type="checkbox" id="Mensal">
+                    <label for="Mensal"> Mensal</label><br>
+                </div>
+                
+                <div class="periodo">
+                    <input type="checkbox" id="Hoje">
+                    <label for="Hoje"> Apenas Hoje</label><br><br>
+                </div>
+                
+                <div class = 'botao'>
+                    <input class= 'marcado' type="submit" value="Confirmar">
+                </div>
+
             </form>
 
         <div>

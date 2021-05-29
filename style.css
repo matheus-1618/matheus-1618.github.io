@@ -40,9 +40,7 @@ header h1{
 
 .content-box{
 
-    position:relative;
-
-    max-width: 100%;
+    width: 100%;
     height: 100%;
 
     display: flex;
@@ -52,6 +50,8 @@ header h1{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+
+    padding: 0.2rem 0.2rem;
        
  }
 
@@ -69,14 +69,14 @@ header h1{
     width: 100%;
  }
 
- .content-box a {
+ .content-box .a_content{
 
     display: flex;
 
     justify-content: center;
     align-items: center;
 
-    border-right:  0.1rem solid black;
+    /*border-right:  0.1rem solid black;*/
 
     width: 100%;
 }
@@ -149,6 +149,15 @@ header h1{
 
 /*TELA CHAT*/
 
+/*Tentando ajustar convera André*/
+
+.content-box .ir_chat{
+    text-decoration: none;
+    border-right: none;
+}
+
+/**/
+
 .imagem_paciente{
     
     height: 5rem;
@@ -213,17 +222,27 @@ header h1{
     color: red;
 }
 
-.frase {
+.frase , .ir_chat {
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    width: 100%;
+    width: 80%;
     height: 100%;
+
+    text-align: center;
 
     padding-left: 0.8rem;
 }
+
+.ir_chat{
+    text-decoration: none;
+    color: black;
+
+    left: 0rem;;
+}
+
 
 /*TELA AGENDA*/
 
@@ -334,7 +353,7 @@ img.add_consulta {
     height: 15%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     
     font-size: 1.2rem;
@@ -344,9 +363,15 @@ img.add_consulta {
 li.nome_paciente{
 
     border-bottom: 0.1rem solid black;
-    margin-bottom: 1.2rem;
+    /*margin-bottom: 1.2rem;*/
 }
 
+li .Nome{
+    width: 80%;
+    height: 90%;
+
+    margin-top: 2.4rem;
+}
 
 .frequencia {
 
@@ -354,15 +379,15 @@ li.nome_paciente{
     
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .frequencia h2 {
 
-    margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
 
     width: 100%;
-    height: 15%;
+    height: 5%;
 
     display: flex;
     justify-content: space-between;
@@ -377,9 +402,219 @@ li.nome_paciente{
     display: flex;
     flex-direction: column;
 
+    margin-top: 1.5rem;
+
     flex: 2;
 }
 
+
+.frequencia .periodo{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.frequencia .botao{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.2rem;
+}
+
+.frequencia .marcado{
+
+    width: 50%;
+    height: 2rem;
+
+    border-radius: 0.4rem;
+
+}
+
+/*TELA TROCA DE MSM*/
+
+.mensagens{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border-bottom: 0.05rem solid gray;
+}
+
+.msm_pac{
+    
+    width: 60%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 0.1rem;
+    margin-left: 0.2rem;
+
+    border: 0.1rem solid black;
+    border-radius: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.msm_psi {
+
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 0.4rem;
+}
+
+/*para permitir a borda*/
+.msm_psi .msm {
+
+    display: flex;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+
+    padding-left: 0.1rem;
+
+    border: 0.1rem solid black;
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.depois_agenda{
+    display: none;
+}
+
+.digite {
+
+    position: relative;
+
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-left: 2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.content-box .ligar{
+    width: 1%;
+}
+
+.digite .digite_aqui{
+
+    width: 70%;
+    height: 60%;
+
+}
+
+.digite img {
+
+    position: absolute;
+
+    width: 2rem;
+    height: 2rem;
+
+    right:1.8rem;
+    bottom: 0.7rem;
+}
+
+/*TELA EXTRAS VÍDEO E PERFIL*/
+
+/*Video*/
+.content-box video{
+    width: 115%;
+    height: 104%;
+}
+
+/*Perfil*/
+.content-perfil{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.nav-perfil{
+    height: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.maria{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font: 1.7rem black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.opcoes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font: 1.7rem black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-bottom: 0.1rem solid black;
+    border-top: 0.1rem solid black;
+}
+
+.content-perfil .seu-perfil {
+    width: 9rem;
+    height: 9rem;
+}
+
+.content-perfil .ajuda {
+    width: 1rem;
+    height: rem;
+    margin-left: 0.3rem;
+}
+
+.content-perfil a{
+    text-decoration: none;
+    border:0.1rem solid black;
+    border-radius: 0.6rem;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 6rem;
+    height: 3rem;
+
+    font: 1.2rem black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content-perfil li {
+    font-size: 1.5rem;
+    height: 3rem;
+
+}
 
 /*Presente em todas as telas FOOTER*/
 
@@ -394,6 +629,7 @@ footer {
     width: 100%;
     
     border-top: 0.1rem solid black;
+    margin-top: 0.1rem;
 
 }
 
