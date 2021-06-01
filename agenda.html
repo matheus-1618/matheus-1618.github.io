@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
     <script src="js/mudar_nome.js"></script>
+    <script src="js/popup_desmarca.js"></script>
 
 </head>
 <body>
@@ -49,7 +51,6 @@
                 <li class="hora">10hrs/11hrs</li>
                 <li class="add_js_nome">
                     <!--Javascript-->
-                    <div class ='pop_add'></div>
                     <a class = 'a_content' href="marcar_consulta.html"><img class = 'add_consulta' src="img/adicionar.png" alt="adicionar"></a>
                 </li>
             </ul>
@@ -62,12 +63,10 @@
             </ul>
 
             <ul class = 'linha_agenda'>
+                <!-- Javascript? -->
                 <li class="hora">13hrs/14hrs</li>
-                <li>
-                    <!-- Javascript? -->
-                    <div class ='pop_delete'></div>
+                <li class= "Andre"> 
                     André
-
                 </li>
             </ul>
 
@@ -79,8 +78,28 @@
             </ul>
 
         </div>
-
     </main>
+
+    <!--Após clicar em ANdré para desmarcar-->
+    <div class="overlay"></div> <!--após clicar mudar para classe overlay-->
+
+    <div class="popup">  <!--Após clicar mudar para class popup-->
+        
+        <div class ="cabecalho">
+            
+            <img class = "x" src="img/x.png" alt="fechar">
+    
+            <h2>André</h2>
+
+        </div>
+
+        <p>13hrs/14hrs</p>
+
+        <div class = "botao_desmarcar">
+            Desmarcar
+        </div>
+
+    </div>
 
     <footer>
         <img src="img/logo.png" alt="logo">
