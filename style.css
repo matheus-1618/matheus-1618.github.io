@@ -417,6 +417,12 @@ header h1{
     border-bottom: 0.1rem solid black;
 }
 
+
+/*Agenda pop e fundo transparente*/
+
+
+
+
 /*Concertando a sobreposição de linhas da última pessoa*/
 .linha_agenda_ultima {
 
@@ -563,6 +569,10 @@ li .Nome{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
+
 
 }
 
@@ -583,6 +593,9 @@ li .Nome{
     height: 2rem;
 
     border-radius: 0.4rem;
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
 
 }
 
@@ -866,6 +879,13 @@ li .Nome{
     font-size: 1.5rem;
     height: 3rem;
 
+}
+
+
+a.perfil_sair {
+    font-family: 'Roboto Slab', serif;
+    font-size:1rem;
+    font-weight: bolder;
 }
 
 /*Presente em todas as telas FOOTER*/
