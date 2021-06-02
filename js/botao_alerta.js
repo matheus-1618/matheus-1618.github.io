@@ -9,14 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
         botao_nao =  document.querySelector(".botao_nao")
         botao_sim =  document.querySelector(".botao_sim")
 
+        localStorage.setItem('vazio',0)
+
         alerta.addEventListener('click', function(event) {
 
-            overlay.style.display = "block"
-            popup.style.display = "flex"
-            popup.style.flexDirection = "column"
-            popup.style.justifyContent = "space-between"
-            popup.style.alignItems = "center"
-
+            if(localStorage.getItem('vazio')!=1){
+                overlay.style.display = "block"
+                popup.style.display = "flex"
+                popup.style.flexDirection = "column"
+                popup.style.justifyContent = "space-between"
+                popup.style.alignItems = "center"
+                localStorage.getItem('vazio',1)
+            }
         })
 
         fechar.addEventListener( 'click', function(event) {
@@ -47,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             overlay.style.display = "none"
             popup.style.display = "none"
+
+            localStorage.setItem('vazio',1)
 
         })
    

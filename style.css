@@ -32,8 +32,8 @@ header img{
 }
 
 header h1{
-
     font: 2rem black;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     align-items: center;
     max-width: 100%;
@@ -93,8 +93,9 @@ header h1{
 }
 
 .bemvinda {
-
     font-size:2rem;
+    font-family: 'Ubuntu', sans-serif;
+
     padding:0.8rem;
 
     width: 100%;
@@ -111,6 +112,7 @@ header h1{
 
     width:100%;
     font-size:1.8rem;
+    font-family: 'Ubuntu', sans-serif;
  }
 
 .items{
@@ -136,10 +138,11 @@ header h1{
     align-items: center;
     justify-content: center;
 
-    height: 6rem;
-    width: 70%;
+    height: 4rem;
+    width: 50%;
 
     font-size:1.5rem;
+    font-family: 'Ubuntu', sans-serif;
 
     border: 0.1rem solid black;
 
@@ -219,6 +222,7 @@ header h1{
     height: 50%;
 
     font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
     border-bottom: 0.1rem solid black;
 }
 
@@ -235,6 +239,10 @@ header h1{
 
     width: 80%;
     height: 100%;
+
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
 
     text-align: center;
 
@@ -355,6 +363,8 @@ header h1{
     align-items: center;
     justify-content: space-evenly;
 
+    font-family: 'Ubuntu', sans-serif;
+
     border-bottom: 0.1rem solid black;
 }
 
@@ -383,6 +393,24 @@ header h1{
 
     display: flex;
 
+    font-family: 'Roboto Slab', serif;
+
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    border-bottom: 0.1rem solid black;
+}
+
+.linha_agenda_principal{
+    font-family: 'Ubuntu', sans-serif;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+
     align-items: center;
     justify-content: space-evenly;
 
@@ -396,6 +424,8 @@ header h1{
     height: 100%;
 
     display: flex;
+    font-size:
+    font-family: 'Roboto Slab', serif;
 
     align-items: center;
     justify-content: space-evenly;
@@ -408,24 +438,38 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size:0.8rem;
+    font-weight: bolder;
     width: 100%;
     height: 100%;
     
 }
+
+.linha_agenda_principal li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
 
 .linha_agenda_ultima li {
 
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
     width: 100%;
     height: 100%;
 }
 
 .hora{
     border-right: 0.1rem solid black;
+
 }
 
 img.add_consulta {
@@ -460,7 +504,7 @@ img.add_consulta {
 }
 
 li.nome_paciente{
-
+    font-family: 'Ubuntu', sans-serif;
     border-bottom: 0.1rem solid black;
     /*margin-bottom: 1.2rem;*/
 }
@@ -495,24 +539,11 @@ li .Nome{
     align-items: center;
     
     font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
 
     border-bottom: 0.1rem solid black;
-    /*border-top: 0.1rem solid black;*/
 }
 
-/*.formulario {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height:40%;
-    justify-content: space-evenly;
-    align-items: center;
-    
-
-    margin-top: 1.5rem;
-
-    flex: 2;
-}*/
 
 .formulario {
     display: flex;
@@ -524,10 +555,6 @@ li .Nome{
 }
 
 
-/*.botao{
-    width: 30%;
-    min-width: 10%;
-}*/
 
 .frequencia .periodo{
     width: 100%;
@@ -552,7 +579,7 @@ li .Nome{
 
 .frequencia .marcado{
 
-    width: 50%;
+    width: 40%;
     height: 2rem;
 
     border-radius: 0.4rem;
@@ -677,6 +704,10 @@ li .Nome{
     padding-left: 0.1rem;
     margin-left: 0.2rem;
 
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
+
     border: 0.1rem solid black;
     border-radius: 0.5rem 0.5rem 0.5rem 0rem;
 }
@@ -686,6 +717,10 @@ li .Nome{
 
     width: 100%;
     height: 10%;
+
+    font-family: 'Roboto Slab', serif;
+    font-size:0.8rem;
+    font-weight: bolder;
 
     display: flex;
     flex-direction: row-reverse;
@@ -783,7 +818,10 @@ li .Nome{
     display:flex;
     justify-content: center;
     align-items: center;
+
     font: 1.7rem black;
+    font-family: 'Ubuntu', sans-serif;
+
     text-align: center;
 }
 
@@ -792,6 +830,7 @@ li .Nome{
     justify-content: center;
     align-items: center;
     font: 1.7rem black;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     border-bottom: 0.1rem solid black;
     border-top: 0.1rem solid black;
@@ -836,6 +875,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Ubuntu', sans-serif;
 
     flex-grow: 1;
 

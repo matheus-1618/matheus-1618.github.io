@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.display = "none"
         popup.style.display = "none"
 
+        localStorage.setItem('vazio',1)
+
 
     })
 

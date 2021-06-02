@@ -29,6 +29,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
         li.innerHTML = texto
+        
+
+        andre = document.querySelector(".Andre")
+
+        andre.innerHTML = ''
+
+        img = document.createElement('img')
+
+        img.src = "img/adicionar.png" 
+        img.alt = "adicionar"
+
+        img.classList.add('add_consulta')
+
+        andre.appendChild(img)
+
+        overlay.style.display = "none"
+        popup.style.display = "none"
+
+        localStorage.setItem('vazio',1)
 
     
     }
