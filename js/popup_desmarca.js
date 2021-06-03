@@ -8,13 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     fechar = document.querySelector(".x")
     desmarcar = document.querySelector(".botao_desmarcar")
 
-    andre.addEventListener('click', function(event) {
+    localStorage.setItem('vazio',0)
 
-        overlay.style.display = "block"
-        popup.style.display = "flex"
-        popup.style.flexDirection = "column"
-        popup.style.justifyContent = "space-between"
-        popup.style.alignItems = "center"
+    andre.addEventListener('click', function(event) {
+        if(localStorage.getItem('vazio')!=1){
+            overlay.style.display = "block"
+            popup.style.display = "flex"
+            popup.style.flexDirection = "column"
+            popup.style.justifyContent = "space-between"
+            popup.style.alignItems = "center"
+            localStorage.getItem('vazio',1)
+        }
 
     })
 
