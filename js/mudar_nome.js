@@ -30,26 +30,24 @@ document.addEventListener('DOMContentLoaded', function() {
     
         li.innerHTML = texto
         
+        if(localStorage.getItem('desmarcou')== 1){
+            andre = document.querySelector(".Andre")
 
-        andre = document.querySelector(".Andre")
+            andre.innerHTML = ''
 
-        andre.innerHTML = ''
+            img = document.createElement('img')
 
-        img = document.createElement('img')
+            img.src = "img/adicionar.png" 
+            img.alt = "adicionar"
 
-        img.src = "img/adicionar.png" 
-        img.alt = "adicionar"
+            img.classList.add('add_consulta')
 
-        img.classList.add('add_consulta')
+            andre.appendChild(img)
 
-        andre.appendChild(img)
+            overlay.style.display = "none"
+            popup.style.display = "none"
 
-        overlay.style.display = "none"
-        popup.style.display = "none"
-
-        localStorage.setItem('vazio',1)
-
-    
+        }    
     }
 
 })

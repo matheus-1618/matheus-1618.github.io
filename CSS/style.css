@@ -17,14 +17,14 @@ header{
     width: 100%;
 
     border-bottom: 0.1rem solid black; 
-    background-color: #7760FF; 
+    background-color: #1E98F5; 
 }
 
 header img{
 
     position:absolute;
 
-    height: 3.5rem;
+    height: 3rem;
     width: 3rem;
 
     left: 0.5rem;
@@ -32,7 +32,7 @@ header img{
 }
 
 header h1{
-    font: 2rem black;
+    font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     align-items: center;
@@ -52,8 +52,6 @@ header h1{
     text-align: center;
     justify-content: space-evenly;
 
-    padding: 0.2rem 0.2rem;
-       
  }
 
  /*Tela MENU PRINCIPAL*/
@@ -143,15 +141,18 @@ header h1{
 
     font-size:1.5rem;
     font-family: 'Ubuntu', sans-serif;
-
+   
     border: 0.1rem solid black;
 
     border-radius: 0.7rem;
+
+    background-color: #68B9F7;
 }
 
 .select a {
     text-decoration: none;
     border: none;
+    color: black;
 }
 
 
@@ -259,25 +260,6 @@ header h1{
 /*Adicionando classes ativadas por javascript após ser apertado o botão alerta.*/
 /*overlay reaproveitado de remarcar consulta*/
 
-.popup_2 {
-
-    position: fixed;
-    display:none;
-
-    top: 30%; 
-    left: 22%; 
-
-    width: 50%;
-    height: 40%;
-    padding: 0.2rem;
-
-    border: solid 1px #4c4d4f;
-    background:white;
-
-    /*Quando abertado mudar para display flex , justify content: space evenly e align item center*/
-
-}
-
 .cabecalho_2 {
 
     height: 50%;
@@ -290,6 +272,9 @@ header h1{
     text-align: center;
 
     padding-top: 0.4rem;
+
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid black;
 }
 
 .x {
@@ -301,19 +286,6 @@ header h1{
     width:0.8rem;
     height: 0.8rem;
 } 
-
-.popup_2 h2 {
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 1.2rem;
-    
-}
 
 .botoes {
 
@@ -430,7 +402,7 @@ header h1{
     height: 100%;
 
     display: flex;
-    font-size:
+    font-size: 0.8rem;
     font-family: 'Roboto Slab', serif;
 
     align-items: center;
@@ -506,13 +478,13 @@ img.add_consulta {
     align-items: center;
     
     font-size: 1.2rem;
-    /*border-bottom: 0.1rem solid black;*/
 }
 
 li.nome_paciente{
     font-family: 'Ubuntu', sans-serif;
     border-bottom: 0.1rem solid black;
-    /*margin-bottom: 1.2rem;*/
+    
+    margin-left:0.1rem;
 }
 
 li .Nome{
@@ -535,10 +507,10 @@ li .Nome{
 
 .frequencia h2 {
 
-    /*margin-bottom: 1.5rem;*/
-
     width: 100%;
     height: 5%;
+
+    margin-left: 0.1rem;
 
     display: flex;
     justify-content: space-between;
@@ -624,7 +596,7 @@ li .Nome{
     display:none;
 
     top: 30%; 
-    left: 22%; 
+    left: 25%; 
 
     width: 50%;
     height: 40%;
@@ -636,6 +608,7 @@ li .Nome{
     /*Quando abertado mudar para display flex , justify content: space evenly e align item center*/
 
 }
+
 
 .cabecalho {
 
@@ -856,7 +829,7 @@ li .Nome{
 
 .content-perfil .ajuda {
     width: 1rem;
-    height: rem;
+    height: 1rem;
     margin-left: 0.3rem;
 }
 
@@ -883,9 +856,12 @@ li .Nome{
 
 
 a.perfil_sair {
-    font-family: 'Roboto Slab', serif;
-    font-size:1rem;
-    font-weight: bolder;
+    
+    font: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+    background-color: #68B9F7;
+    color:black;
 }
 
 /*Presente em todas as telas FOOTER*/

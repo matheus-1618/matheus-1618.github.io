@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alerta = document.querySelector(".alerta")
 
         overlay = document.querySelector(".overlay")
-        popup = document.querySelector(".popup_2")
+        popup = document.querySelector(".popup")
 
         fechar = document.querySelector(".x")
         botao_nao =  document.querySelector(".botao_nao")

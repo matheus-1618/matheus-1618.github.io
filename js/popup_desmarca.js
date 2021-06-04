@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     desmarcar = document.querySelector(".botao_desmarcar")
 
     localStorage.setItem('vazio',0)
+    localStorage.setItem('desmarcou',0)
 
     andre.addEventListener('click', function(event) {
         if(localStorage.getItem('vazio')!=1){
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.justifyContent = "space-between"
             popup.style.alignItems = "center"
             localStorage.getItem('vazio',1)
+            localStorage.setItem('desmarcou',1)
         }
 
     })
