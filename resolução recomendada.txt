@@ -1,0 +1,5 @@
+Resolução recomendada: 
+            -width: 360px
+            -height: 640px
+            - equivalente ao Moto G4
+                    
